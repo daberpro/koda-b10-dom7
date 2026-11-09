@@ -37,8 +37,11 @@ html,body{
 
 .card-img{
     width: 100%;
+    min-height: 220px;
     border-radius: 1rem;
     border-bottom: 3px solid black;
+    display: grid;
+    place-items: center;
 }
 
 .card-description {

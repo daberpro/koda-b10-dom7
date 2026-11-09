@@ -14,7 +14,7 @@ function paginationComponent(){
 function createCard(data) {
 
     const card = createElement("div",{"class": "card"});
-    const image = createElement("img", {src:  data["image"],loading:"lazy", "class":"card-img"});
+    const image = createElement("img", {src:  data["image"], alt: `Image of ${data["name"]}`,loading:"lazy", "class":"card-img"});
     const cardDescription = createElement("div", {"class":"card-description"});
     const infoKey = ["name"];
     infoKey.forEach(d =>{
