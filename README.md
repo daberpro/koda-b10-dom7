@@ -5,4 +5,4 @@ into a function so whenever i want to creare a component
 i just need to specify a few params
 
 ### Demo
-![Demo gif image](Recording%202026-11-09%20at%2013.00.44.gif)
+![Demo gif image](Recording%202026-11-09%20at%2013.48.10.gif)

@@ -7,14 +7,18 @@ function createElement(name = "div", attr = {}, content = "") {
     return el;
 }
 
+function paginationComponent(){
+    
+}
+
 function createCard(data) {
 
     const card = createElement("div",{"class": "card"});
-    const image = createElement("img", {src:  data["image"], "class":"card-img"});
+    const image = createElement("img", {src:  data["image"],loading:"lazy", "class":"card-img"});
     const cardDescription = createElement("div", {"class":"card-description"});
-    const infoKey = ["name", "status", "species", "gender"];
+    const infoKey = ["name"];
     infoKey.forEach(d =>{
-        const content = createElement("span",{"class":""}, `${d}: ${data[d]}`);
+        const content = createElement("span",{"class":""}, `${data[d]}`);
         cardDescription.appendChild(content);
     });
 
