@@ -22,6 +22,10 @@ function createCard(data) {
         cardDescription.appendChild(content);
     });
 
+    image.onerror = ()=>{
+        image.src = "220.svg";
+    }
+
     card.appendChild(image);
     card.appendChild(cardDescription);
     return card;
